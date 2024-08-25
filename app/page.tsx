@@ -1,8 +1,18 @@
+import Camp from "@/components/Camp";
+import Features from "@/components/Features";
+import GetApp from "@/components/GetApp";
+import Guide from "@/components/Guide";
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <h1 className="font-bold text-teal-500 text-2xl">New site under construction. Please visit our  current site <a className="text-blue-500"
-    href="https://patrickzhou45.wixsite.com/cando-tennis">here.</a> </h1>
+    <>
+      <Hero />
+      <Camp />
+      <Guide />
+      <Features />
+      <GetApp />
+    </>
   );
 }
