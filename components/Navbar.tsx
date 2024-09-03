@@ -7,7 +7,6 @@ import { useState } from "react";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 
-// TODO: Change links
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

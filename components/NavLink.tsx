@@ -12,7 +12,7 @@ const NavLink = ({ href, key, label }: NavLinkProps) => {
     <Link
       href={href}
       key={key}
-      className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+      className="regular-16 lg:regular-24 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
     >
       {label}
     </Link>
