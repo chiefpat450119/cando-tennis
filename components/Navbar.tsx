@@ -1,46 +1,68 @@
+"use client";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import { useState } from "react";
+import NavLink from "./NavLink";
+import MenuOverlay from "./MenuOverlay";
+
+// TODO: Change links
 
 const Navbar = () => {
-  return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <Link href="/">
-        <Image
-          src="/hilink-logo.svg"
-          alt="Hilink Logo"
-          width={74}
-          height={29}
-        />
-      </Link>
-      <ul className="hidden h-full gap-12 lg:flex">
-        {NAV_LINKS.map((link) => (
-          <Link
-            href={link.href}
-            key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </ul>
-      <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
-      </div>
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-      <Image
-        src="/menu.svg"
-        alt="Menu"
-        width={32}
-        height={32}
-        className="lg:hidden inline-block cursor-pointer"
-      />
+  return (
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-30 bg-opacity-100">
+      <div className="flexBetween max-container padding-container relative z-30 py-5">
+        <Link href="/">
+          <Image
+            src="/tennis-logo.jpeg"
+            alt="Cando Tennis Logo"
+            width={65}
+            height={65}
+          />
+        </Link>
+        <div className="mobile-menu block md:hidden">
+          {!navbarOpen ? (
+            <button
+              onClick={() => setNavbarOpen(true)}
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            >
+              <Image
+                src="/menu.svg"
+                alt="Menu"
+                width={32}
+                height={32}
+                className="cursor-pointer"
+              />
+            </button>
+          ) : (
+            <button
+              onClick={() => setNavbarOpen(false)}
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            >
+              <Image
+                src="/menu.svg"
+                alt="Menu"
+                width={32}
+                height={32}
+                className="cursor-pointer"
+              />
+            </button>
+          )}
+        </div>
+        <ul className="menu hidden h-full gap-12 md:flex">
+          {NAV_LINKS.map((link, index) => (
+            <li key={index}>
+              <NavLink href={link.href} key={link.key} label={link.label} />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="z-40">
+        {navbarOpen ? <MenuOverlay links={NAV_LINKS} /> : null}
+      </div>
     </nav>
   );
 };
