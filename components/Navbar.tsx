@@ -22,6 +22,12 @@ const Navbar = () => {
             height={65}
           />
         </Link>
+        <Link href="/">
+          <h1
+            className="text-4xl lg:text-6xl text-green-50 cursor-pointer"
+            style={{ fontFamily: "Bebas Neue" }}
+          >CANDO TENNIS</h1>
+        </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button

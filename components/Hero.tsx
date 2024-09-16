@@ -5,7 +5,9 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-20 md:gap-28 pt-40 xl:flex-row">
-      <div className="hero-map" />
+      {/* {<div className="hero-map" />} */
+      // replace with tennis related image 
+      }
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
@@ -48,10 +50,10 @@ const Hero = () => {
         </div>
 
         <div className="flex w-full gap-3 sm:flex-row">
-          <Button type="button" title="Download App" variant="btn_green" />
+          <Button type="button" title="Contact Us" variant="btn_green" />
           <Button
             type="button"
-            title="How we work?"
+            title="See us in action"
             icon="/play.svg"
             variant="btn_white_text"
           />
@@ -63,10 +65,13 @@ const Hero = () => {
             <div className="flexBetween">
               <p className="regular-16 text-gray-20">Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
+              {// Change this to a location icon
+              }
             </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
+            <p className="bold-20 text-white">Anywhere in Singapore</p>
           </div>
 
+              {/* Figure out a use or just delete this */}
           <div className="flexBetween">
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Distance</p>
