@@ -83,3 +83,11 @@ export const SOCIALS = {
     "/wordpress.svg",
   ],
 };
+
+export const GALLERY_IMAGES = [
+  { src: "/person-1.png", alt: "Gallery 1" },
+  { src: "/person-2.png", alt: "Gallery 2" },
+  { src: "/person-3.png", alt: "Gallery 3" },
+  { src: "/person-4.png", alt: "Gallery 4" },
+
+]

@@ -4,12 +4,9 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-20 md:gap-28 pt-40 xl:flex-row">
-      {/* {<div className="hero-map" />} */
-      // replace with tennis related image 
-      }
+    <section className="max-container padding-container flex flex-col gap-20 py-20 md:gap-28 mt-20 xl:flex-row hero-map">
 
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
+      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 backdrop-brightness-200 backdrop-blur-sm p-5 rounded-x;">
         <Image
           src="tennis_ball.svg"
           alt="tennis ball"
@@ -17,8 +14,8 @@ const Hero = () => {
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88">Tennis Coaching for Everyone</h1>
-        <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
+        <h1 className="bold-52 lg:bold-64">Tennis Coaching for Everyone</h1>
+        <p className="regular-16 mt-6 text-slate-700 xl:max-w-[520px]">
           Ever wanted to learn tennis, but found yourself struggling to hit the
           ball? Have you been frustrated trying to play only to spend most of
           the time picking up balls? With CanDo Tennis, you can begin with the
@@ -49,7 +46,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex w-full gap-3 sm:flex-row">
+        <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button type="button" title="Contact Us" variant="btn_green" />
           <Button
             type="button"
@@ -63,23 +60,25 @@ const Hero = () => {
         <div className="relative z-20 flex flex-col gap-8 rounded-3xl bg-green-90 w-[268px] px-7 py-8">
           <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Location</p>
-              <Image src="/close.svg" alt="close" width={24} height={24} />
-              {// Change this to a location icon
-              }
+              <p className="regular-16 text-gray-20">Location?</p>
+              <Image
+                src="/location.svg"
+                alt="location"
+                width={24}
+                height={24}
+              />
             </div>
             <p className="bold-20 text-white">Anywhere in Singapore</p>
           </div>
 
-              {/* Figure out a use or just delete this */}
           <div className="flexBetween">
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 km</p>
+              <p className="regular-16 block text-gray-20">Skill Level?</p>
+              <p className="bold-20 text-white">Any!</p>
             </div>
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
+              <p className="regular-16 block text-gray-20">Improvement?</p>
+              <p className="bold-20 text-white">Guaranteed</p>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ interface CampProps {
   peopleJoined: string;
 }
 
-const CampSite = ({
+const Review = ({
   backgroundImage,
   title,
   subtitle,
@@ -54,17 +54,17 @@ const CampSite = ({
   );
 };
 
-const Camp = () => {
+const Reviews = () => {
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify start gap-8 overflow-x-auto lg:h=[400px] xl:h-[640px]">
-        <CampSite
+        <Review
           backgroundImage="bg-bg-img-1"
           title="Putuk Truno Camp"
           subtitle="Prigen, Pasuruan"
           peopleJoined="50+ Joined"
         />
-        <CampSite
+        <Review
           backgroundImage="bg-bg-img-2"
           title="Mountain View Camp"
           subtitle="Somewhere in the Wilderness"
@@ -96,4 +96,4 @@ const Camp = () => {
   );
 };
 
-export default Camp;
+export default Reviews;

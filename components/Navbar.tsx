@@ -13,21 +13,22 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-30 bg-opacity-100">
-      <div className="flexBetween max-container padding-container relative z-30 py-5">
-        <Link href="/">
-          <Image
-            src="/tennis-logo.jpeg"
-            alt="Cando Tennis Logo"
-            width={65}
-            height={65}
-          />
-        </Link>
-        <Link href="/">
-          <h1
-            className="text-4xl lg:text-6xl text-green-50 cursor-pointer"
-            style={{ fontFamily: "Bebas Neue" }}
-          >CANDO TENNIS</h1>
-        </Link>
+      <div className="flexBetween max-container padding-container relative z-30 py-3">
+        <div className="flex gap-3 md:grow-0 grow justify-center items-center md:justify-start">
+          <Link href="/">
+            <Image
+              src="/tennis-logo.jpeg"
+              alt="Cando Tennis Logo"
+              width={65}
+              height={65}
+            />
+          </Link>
+          <Link href="/">
+            <h1
+              className="nav-title text-4xl lg:text-5xl text-green-50 cursor-pointer"
+            >CANDO TENNIS</h1>
+          </Link>
+        </div>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
