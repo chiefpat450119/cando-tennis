@@ -4,7 +4,10 @@ import React from "react";
 
 const Classes = () => {
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24" id="services">
+    <section
+      className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24"
+      id="services"
+    >
       <div className="max-container padding-container relative w-full flex items-center justify-end gap-36">
         <div className="flex flex-1 w-full h-[500px] relative">
           <Image
@@ -28,8 +31,9 @@ const Classes = () => {
             <h2 className="bold-40 lg:bold-64">Our Classes</h2>
           </div>
           <ul className="mt-10 grid gap-10 justify-center md:justify-normal md:grid-cols-2 lg:mt-20 lg:gap-20">
-            {TENNIS_CLASSES.map((feature) => (
+            {TENNIS_CLASSES.map((feature, index) => (
               <TennisClass
+                key={index}
                 title={feature.title}
                 price={feature.price}
                 description={feature.description}
@@ -51,7 +55,12 @@ export interface TennisClassInfo {
   imageURL: string;
 }
 
-const TennisClass = ({ title, price, description, imageURL }: TennisClassInfo) => {
+const TennisClass = ({
+  title,
+  price,
+  description,
+  imageURL,
+}: TennisClassInfo) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
       <div className="flex items-center rounded-xl p-4 lg:p-7">
@@ -60,7 +69,7 @@ const TennisClass = ({ title, price, description, imageURL }: TennisClassInfo) =
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
       <p className="bold-16 mt-5 text-green-50">{price}</p>
       <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-30px lg:mt-[30px] lg:bg-none">
-      {description}
+        {description}
       </p>
     </li>
   );
