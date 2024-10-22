@@ -3,6 +3,7 @@ import React from "react";
 import { GALLERY_IMAGES } from "@/constants";
 import ImageGallery from "react-image-gallery";
 
+// TODO: npm install list-files and use that to get everything in /photos/ directory
 // placeholder images
 const images = [
   {

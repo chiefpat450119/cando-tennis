@@ -4,9 +4,9 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-20 md:gap-28 mt-20 xl:flex-row hero-map">
+    <section className="padding-container flex flex-col gap-20 py-20 md:gap-28 mt-20 xl:flex-row hero-map">
 
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 backdrop-brightness-200 backdrop-blur-sm p-5 rounded-x;">
+      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 backdrop-brightness-200 backdrop-blur-sm p-5 rounded-2xl">
         <Image
           src="tennis_ball.svg"
           alt="tennis ball"

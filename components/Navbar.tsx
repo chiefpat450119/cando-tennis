@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-30 bg-opacity-100">
-      <div className="flexBetween max-container padding-container relative z-30 py-3">
+      <div className="flexBetween items-center max-container padding-container relative z-30 py-3">
         <div className="flex gap-3 md:grow-0 grow justify-center items-center md:justify-start">
           <Link href="/">
             <Image

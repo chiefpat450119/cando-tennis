@@ -37,7 +37,7 @@ const Review = ({
 
 const Reviews = () => {
   return (
-    <section className="2xl:max-container relative flex flex-col py-10 lg:mb-8 lg:py-15 xl:mb-15">
+    <section className="relative flex flex-col py-10 lg:mb-8 lg:py-15 xl:mb-15">
       <div className="hide-scrollbar flex h-[340px] p-8 lg:p-10 w-full items-start justify-start gap-8 lg:gap-12 overflow-x-auto lg:h=[400px] xl:h-[640px] bg-blue-500">
         {REVIEWS.map((review) => (
           <Review
