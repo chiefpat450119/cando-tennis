@@ -1,4 +1,4 @@
-import Reviews from "@/components/Review";
+import Reviews from "@/components/Testimonials";
 import Features from "@/components/Features";
 import Gallery from "@/components/Gallery";
 import GetApp from "@/components/GetApp";

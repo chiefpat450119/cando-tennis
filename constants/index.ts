@@ -1,3 +1,5 @@
+import { ReviewProps } from "@/components/Testimonials";
+
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
@@ -6,12 +8,32 @@ export const NAV_LINKS = [
   { href: "/", key: "contact_us", label: "Contact Us" },
 ];
 
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
+// REVIEWS SECTION
+export const REVIEWS: ReviewProps[] = [
+  {
+    imageURL: "/person-1.png",
+    name: "John Doe",
+    body:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt"
+  },
+  {
+    imageURL: "/person-2.png",
+    name: "Jane Doe",
+    body:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt"
+  },
+  {
+    imageURL: "/person-3.png",
+    name: "John Smith",
+    body:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt"
+  },
+  {
+    imageURL: "/person-4.png",
+    name: "Jane Smith",
+    body:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt"
+  },
 ];
 
 // FEATURES SECTION
