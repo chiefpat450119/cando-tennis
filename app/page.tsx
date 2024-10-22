@@ -1,7 +1,7 @@
 import Reviews from "@/components/Testimonials";
-import Features from "@/components/Features";
+import Classes from "@/components/Classes";
 import Gallery from "@/components/Gallery";
-import GetApp from "@/components/GetApp";
+import Contact from "@/components/Contact";
 import Guide from "@/components/About";
 import Hero from "@/components/Hero";
 import Image from "next/image";
@@ -13,8 +13,8 @@ export default function Home() {
       <Gallery />
       <Reviews />
       <Guide />
-      <Features />
-      <GetApp />
+      <Classes />
+      <Contact />
     </>
   );
 }

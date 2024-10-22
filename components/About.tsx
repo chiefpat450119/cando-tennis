@@ -3,7 +3,7 @@ import React from "react";
 
 const Guide = () => {
   return (
-    <section className="flexCenter flex-col">
+    <section className="flexCenter flex-col" id="about">
       <div className="padding-container max-container w-full pb-24">
         <Image
           src="/tennis_ball.svg"

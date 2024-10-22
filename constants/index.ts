@@ -1,11 +1,12 @@
+import { TennisClassInfo } from "@/components/Classes";
 import { ReviewProps } from "@/components/Testimonials";
 
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "faq", label: "FAQ" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "contact_us", label: "Contact Us" },
+  { href: "/#about", key: "about", label: "About" },
+  { href: "/#services", key: "services", label: "Services" },
+  { href: "/#contact", key: "contact_us", label: "Contact Us" },
 ];
 
 // REVIEWS SECTION
@@ -36,36 +37,29 @@ export const REVIEWS: ReviewProps[] = [
   },
 ];
 
-// FEATURES SECTION
-export const FEATURES = [
+// TENNIS CLASSES SECTION
+export const TENNIS_CLASSES: TennisClassInfo[] = [
   {
-    title: "Real maps can be offline",
-    icon: "/map.svg",
-    variant: "green",
+    title: "Beginner",
+    price: "$50",
     description:
-      "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/tennis_ball.svg",
   },
   {
-    title: "Set an adventure schedule",
-    icon: "/calendar.svg",
-    variant: "green",
+    title: "Intermediate",
+    price: "$75",
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/tennis_ball.svg",
   },
   {
-    title: "Technology using augment reality",
-    icon: "/tech.svg",
-    variant: "green",
+    title: "Advanced",
+    price: "$100",
     description:
-      "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
-  },
-  {
-    title: "Many new locations every month",
-    icon: "/location.svg",
-    variant: "orange",
-    description:
-      "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
-  },
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/tennis_ball.svg",
+  }
 ];
 
 // FOOTER SECTION
@@ -107,9 +101,11 @@ export const SOCIALS = {
 };
 
 export const GALLERY_IMAGES = [
-  { src: "/person-1.png", alt: "Gallery 1" },
-  { src: "/person-2.png", alt: "Gallery 2" },
-  { src: "/person-3.png", alt: "Gallery 3" },
-  { src: "/person-4.png", alt: "Gallery 4" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 1" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 2" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 3" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 4" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 5" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 6" },
 
 ]
