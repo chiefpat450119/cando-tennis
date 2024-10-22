@@ -16,7 +16,7 @@ const Review = ({
 }: ReviewProps) => {
   return (
     <div
-      className={`h-full w-full min-w-[500px] lg:min-w-[1000px] bg-cover bg-no-repeat bg-black bg-opacity-50 lg:rounded-r-5xl 2xl:rounded-5xl`}
+      className={`h-full w-full min-w-[400px] lg:min-w-[1000px] bg-cover bg-no-repeat bg-black bg-opacity-50 lg:rounded-r-5xl 2xl:rounded-5xl`}
     >
       <div className="flex flex-row items-center justify-between h-full w-full">
         <div className="flex flex-col items-center justify-center gap-5 p-5">

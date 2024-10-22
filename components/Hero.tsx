@@ -47,12 +47,15 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button type="button" title="Contact Us" variant="btn_green" />
+          <Button type="button" title="Contact Us" variant="btn_green" 
+          link="/#contact"
+          />
           <Button
             type="button"
             title="See us in action"
             icon="/play.svg"
             variant="btn_white_text"
+            link="/#services"
           />
         </div>
       </div>

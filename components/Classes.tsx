@@ -27,7 +27,7 @@ const Classes = () => {
             />
             <h2 className="bold-40 lg:bold-64">Our Classes</h2>
           </div>
-          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mt-20 lg:gap-20">
+          <ul className="mt-10 grid gap-10 justify-center md:justify-normal md:grid-cols-2 lg:mt-20 lg:gap-20">
             {TENNIS_CLASSES.map((feature) => (
               <TennisClass
                 title={feature.title}
