@@ -26,6 +26,17 @@ export const SLIDESHOW_IMAGES = [
   },
 ];
 
+// TODO: Replace these placeholders with actual images
+export const GALLERY_IMAGES = [
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 1" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 2" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 3" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 4" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 5" },
+  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 6" },
+];
+
+// TODO: Copy in the reviews from the old site
 // REVIEWS SECTION
 export const REVIEWS: ReviewProps[] = [
   {
@@ -50,32 +61,63 @@ export const REVIEWS: ReviewProps[] = [
   },
 ];
 
+// TODO: Replace images.
 // TENNIS CLASSES SECTION
 export const TENNIS_CLASSES: TennisClassInfo[] = [
   {
-    title: "Beginner",
-    price: "$50",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
-    imageURL: "/tennis_ball.svg",
-  },
-  {
-    title: "Intermediate",
-    price: "$75",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
-    imageURL: "/tennis_ball.svg",
-  },
-  {
-    title: "Advanced",
+    title: "Private Beginner Lesson",
     price: "$100",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+      "The goal of this class is to introduce tennis to players who have never touched a tennis racket before. After a few classes, students should be able to rally with each other and have fun on the court. Do you have what it takes? Sign up now to find out!",
     imageURL: "/tennis_ball.svg",
   },
+  {
+    title: "Semi-Private Beginner Class (2-3 persons)",
+    price: "$110",
+    description: "",
+    imageURL: "/tennis_ball.svg",
+  },
+  {
+    title: "Private Intermediate Lesson",
+    price: "$110",
+    description:
+      "This class is developed for intermediate players who want to improve on certain skills to make him/herself all around to be more confident during the match play. As the saying goes, practice makes perfect. So start training with someone that'll keep you motivated to practice for the long haul. Book a class today!",
+    imageURL: "/tennis_ball.svg",
+  },
+  {
+    title: "Semi-Private Intermediate Class (2-3 persons)",
+    price: "$120",
+    description: "",
+    imageURL: "/tennis_ball.svg",
+  },
+  {
+    title: "Serving Class",
+    price: "$60",
+    description: `Has it ever happen to you that you had continuous double faults and felt so embarrassed when playing doubles? or, you felt so frustrated that you cannot add power, spin to the ball, or lack of consistency? Come to this class and you will find your solution to these problems.
+
+1. Grip
+2. Stance
+3. Toss
+4. Racket drop
+5. Kinetic chain
+6. Contact
+7. Follow through
+8. Flat/Slice/Kick Serve demo and practice
+
+4 per group, 60$/pax
+
+`,
+    imageURL: "/tennis_ball.svg",
+  },
+  {
+    title: "Family Class",
+    price: "$120",
+    description: "nothing beats the JOY of Family tennis fun/competition. Learn as a family, support each other not only in the house, but on the court...",
+    imageURL: "/tennis_ball.svg",
+  }
 ];
 
-// FOOTER SECTION
+// Footer links (Unused)
 export const FOOTER_LINKS = [
   {
     title: "Learn More",
@@ -94,6 +136,7 @@ export const FOOTER_LINKS = [
   },
 ];
 
+// Contact information in the footer
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
@@ -102,6 +145,8 @@ export const FOOTER_CONTACT_INFO = {
   ],
 };
 
+// TODO: Replace the placeholders with actual social media links
+// Social media links in the footer
 export const SOCIALS = {
   title: "Social",
   socials: [
@@ -127,12 +172,3 @@ export const SOCIALS = {
     },
   ],
 };
-
-export const GALLERY_IMAGES = [
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 1" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 2" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 3" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 4" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 5" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 6" },
-];

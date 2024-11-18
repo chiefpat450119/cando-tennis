@@ -66,9 +66,9 @@ const TennisClass = ({
       <div className="flex items-center rounded-xl p-4 lg:p-7">
         <Image src={imageURL} alt={title} width={50} height={50} />
       </div>
-      <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
-      <p className="bold-16 mt-5 text-green-50">{price}</p>
-      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-30px lg:mt-[30px] lg:bg-none">
+      <h2 className="bold-20 lg:bold-32 mt-3 capitalize">{title}</h2>
+      <p className="bold-18 lg:text-[24px] mt-3 text-green-50">{price}</p>
+      <p className="regular-16 mt-3 bg-white/80 text-gray-30 lg:bg-none">
         {description}
       </p>
     </li>

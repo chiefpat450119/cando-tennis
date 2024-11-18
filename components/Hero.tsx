@@ -55,7 +55,7 @@ const Hero = () => {
             title="See us in action"
             icon="/play.svg"
             variant="btn_white_text"
-            link="/#services"
+            link="https://www.youtube.com/channel/UCECwLTbiZuRe7H0nyf4Peuw"
           />
         </div>
       </div>
