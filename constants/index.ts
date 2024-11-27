@@ -1,6 +1,7 @@
 import { TennisClassInfo } from "@/components/Classes";
 import { ReviewProps } from "@/components/Testimonials";
 
+
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
@@ -9,32 +10,66 @@ export const NAV_LINKS = [
   { href: "/#contact", key: "contact_us", label: "Contact Us" },
 ];
 
-// TODO: npm install list-files and use that to get everything in /photos/ directory
-// placeholder images
-export const SLIDESHOW_IMAGES = [
-  {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-  },
+interface SlideshowImage {
+  original: string;
+  thumbnail: string;
+}
+
+// List of photo file names
+const photos: string[] = [
+  "/photos/IMG_8190_edited_edited.jpg",
+  "/photos/IMG_8522.png",
+  "/photos/IMG_8849_edited.jpg",
+  "/photos/IMG_8849_edited_edited.jpg",
+  "/photos/IMG_9651_edited.jpg",
+  "/photos/IMG_9656.png",
+  "/photos/kallang.PNG",
+  "/photos/kids ladder_edited.jpg",
+  "/photos/kids play.jpg",
+  "/photos/Lei xuan_edited.jpg",
+  "/photos/lpj.JPG",
+  "/photos/Serve with Tom.jpg",
+  "/photos/Serve with Tom_edited.jpg",
+  "/photos/xiaoxiao.jpg",
+  "/photos/YZ forehand.jpg",
+  "/photos/yz serve.JPG",
+  "/photos/zgl (2).JPG",
+  "/photos/3 boys_edited.jpg",
+  "/photos/3 ladies_edited.jpg",
+  "/photos/b1b25f3a-3e44-4431-8bec-40a36cbc8f9b.jpg",
+  "/photos/b1b25f3a-3e44-4431-8bec-40a36cbc8f9b_edited.jpg",
+  "/photos/bags_edited.jpg",
+  "/photos/birdseye view.JPG",
+  "/photos/ccdec89a952d5932682108a42ee302a3.jpg",
+  "/photos/e0afd759-9b98-4d65-95f1-ab2d691640d9.jpg",
+  "/photos/f27fd7e61eef5bb00ff782175e03d1f7.jpg",
+  "/photos/forehand sm_edited.jpg",
+  "/photos/IMG_0226.jpg",
+  "/photos/IMG_2077_edited.jpg",
+  "/photos/IMG_2116_edited.jpg",
+  "/photos/IMG_2118_edited.jpg",
+  "/photos/IMG_6528.jpg",
+  "/photos/IMG_6608_edited.jpg",
+  "/photos/IMG_8190_edited.jpg",
 ];
 
-// TODO: Replace these placeholders with actual images
-export const GALLERY_IMAGES = [
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 1" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 2" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 3" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 4" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 5" },
-  { src: "/tennis-racquet-on-court.jpg", alt: "Gallery 6" },
-];
+export const SLIDESHOW_IMAGES: SlideshowImage[] = photos.map((photo) => ({
+  original: photo,
+  thumbnail: photo,
+}));
+
+interface GalleryImage {
+  src: string;
+  alt: string;
+}
+// Only 6 random images from the photos folder are shown in the gallery
+export const GALLERY_IMAGES: GalleryImage[] = photos
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 6)
+  .map((photo) => ({
+    src: photo,
+    alt: "Tennis",
+  }));
 
 // TODO: Copy in the reviews from the old site
 // REVIEWS SECTION
@@ -112,9 +147,10 @@ export const TENNIS_CLASSES: TennisClassInfo[] = [
   {
     title: "Family Class",
     price: "$120",
-    description: "nothing beats the JOY of Family tennis fun/competition. Learn as a family, support each other not only in the house, but on the court...",
+    description:
+      "nothing beats the JOY of Family tennis fun/competition. Learn as a family, support each other not only in the house, but on the court...",
     imageURL: "/tennis_ball.svg",
-  }
+  },
 ];
 
 // Footer links (Unused)

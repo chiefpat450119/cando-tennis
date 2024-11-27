@@ -61,7 +61,7 @@ const Navbar = () => {
         <ul className="menu hidden h-full gap-12 md:flex">
           {NAV_LINKS.map((link, index) => (
             <li key={index}>
-              <NavLink href={link.href} key={link.key} label={link.label} />
+              <NavLink href={link.href} label={link.label} />
             </li>
           ))}
         </ul>
