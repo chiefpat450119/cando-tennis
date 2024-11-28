@@ -16,20 +16,20 @@ const Review = ({
 }: ReviewProps) => {
   return (
     <div
-      className={`h-full w-full min-w-[400px] lg:min-w-[1000px] bg-cover bg-no-repeat bg-black bg-opacity-50 lg:rounded-r-5xl 2xl:rounded-5xl`}
+      className={`h-full w-full min-w-[400px] lg:min-w-[1000px] bg-cover bg-no-repeat bg-black bg-opacity-50 rounded-5xl`}
     >
       <div className="flex flex-row items-center justify-between h-full w-full">
-        <div className="flex flex-col items-center justify-center gap-5 p-5">
+        <div className="flex flex-col grow items-center justify-center gap-5 p-5">
           <Image
             src={imageURL}
             alt="person"
             width={400}
             height={800}
-            className="rounded-2xl"
+            className="rounded-2xl max-h-48 lg:max-h-96 object-scale-down"
           />
           <h3 className="text-white text-lg lg:text-2xl text-center">{name}</h3>
         </div>
-        <p className="text-base lg:text-lg text-white p-5">{body}</p>
+        <p className="basis-2/3 text-sm lg:text-lg text-white p-5 overflow-hidden text-ellipsis line-clamp-[8]">{body}</p>
       </div>
     </div>
   );
@@ -38,7 +38,7 @@ const Review = ({
 const Reviews = () => {
   return (
     <section className="relative flex flex-col py-10 lg:mb-8 lg:py-15 xl:mb-15">
-      <div className="hide-scrollbar flex h-[340px] p-8 lg:p-10 w-full items-start justify-start gap-8 lg:gap-12 overflow-x-auto lg:h=[400px] xl:h-[640px] bg-blue-500">
+      <div className="hide-scrollbar flex h-[340px] p-8 lg:p-10 w-full items-start justify-start gap-8 lg:gap-12 overflow-x-auto lg:h-[640px] bg-blue-500">
         {REVIEWS.map((review) => (
           <Review
             key={review.name}

@@ -1,7 +1,6 @@
 import { TennisClassInfo } from "@/components/Classes";
 import { ReviewProps } from "@/components/Testimonials";
 
-
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
@@ -71,28 +70,71 @@ export const GALLERY_IMAGES: GalleryImage[] = photos
     alt: "Tennis",
   }));
 
-// TODO: Copy in the reviews from the old site
 // REVIEWS SECTION
 export const REVIEWS: ReviewProps[] = [
   {
-    imageURL: "/person-1.png",
-    name: "John Doe",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/photos/testimonials/loris.png",
+    name: "Loris",
+    body: `I have been under Coach Yimin's tutelage for a year, honing my tennis skills. the progress has been substantial, and my passion for the sport has deepened. Each training session is eagerly anticipated and brings immense joy. Coach Yimin's expertise is truly remarkable, and his teaching methods are highly effective. He holds the distinction of being the coach with whom I've spent the most time. With meticulous attention, he rectified numerous flaws in my technique, resulting in significant advancements. Now, my forehand grip and stroke exhibit a newfound finesse, earning commendations from peers for notable progress. Apart from our regular practice sessions, which span two to three days a week, Coach Yimin extends invitations to join club sessions, offering invaluable opportunities to interact with seasoned players and learn from their experiences. Additionally, he orchestrates various student-centric activities, ranging from enjoyable Babecues to spirited competitions. During these events, Coach Yimin thoughtfully provides tokens of recognition. I proudly claimed a wristband and a tennis polo shirt as my rewards. 
+As my year-and-a-half-long student sojourn in Singapore draws to a close this winter, I am profoundly grateful for Coach Yimin's steadfast support and motivation throughout this transformative year.`,
   },
   {
-    imageURL: "/person-2.png",
-    name: "Jane Doe",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/photos/testimonials/josna.png",
+    name: "Josna",
+    body: `Mr. Yi is passionate as well as a professional tennis coach. He is consistent, punctual, technical, high focused, patient and most importantly empathetic. Our 9 year old son Roger started as a novic in tennis and has been training with Mr. Yi for about a year now. We have seen his skills improve tremendously, his confidence has just got better and most importnatly he looks forward to his tennis lessons each time which is a proof that he enjoys his game now. His serves are way better, forehand aims anre more accurate, backhand is stronger and is confident as he rallies. We chanced upon Mr yi without any recommendation and we have not regretted our decision anytime. We would highly recommned Mr. Yi to anyone looking for a passionate and qualified tennis coach. 
+`,
   },
   {
-    imageURL: "/person-3.png",
-    name: "John Smith",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/photos/testimonials/lynn.png",
+    name: "Lynn, ShuoMing's mother",
+    body: `首先，很幸运遇到了伯乐周老师，孩子刚开始学网球的时候，只是出于同学的邀请，连我这个妈妈都觉得他也许就几天的热度。可周老师有神奇的方法、丰富的经验、认真的教导、亲切的关怀…孩子从我催着他上网球课，到每周上两次课 四个小时都不解渴, 一有空就磨着老师加课；网球已经成为他热爱的、不可缺少的东西！然后，在收获健康的体魄、愉悦的心情的同时，你会发现，他完全变了一个人：阳光 自信，开朗乐观，在学校交到许多好朋友，在家里体谅帮助我…
+`,
   },
   {
-    imageURL: "/person-4.png",
-    name: "Jane Smith",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Nullam auctor, magna vel tincidunt tincidunt",
+    imageURL: "/photos/testimonials/candc.png",
+    name: "Chris and Caisha",
+    body: `Coach Patrick's patience and professionalism in Tennis coaching helped us develop the basic skills in Tennis. Love the sport!`,
+  },
+  {
+    imageURL: "/photos/testimonials/ju.png",
+    name: "Ju, Data Scientist",
+    body: `Patient and polite; creative and customised on teaching. Class is designed with different components to suit student's rhythm. Balance the technique and overall hitting enjoyment. A great player himself both on tactics and skills. A great teacher (possibly the best in Singapore!!!). oh, did I mention he film the class session regularly to feed back to student for effective improvement.`,
+  },
+  {
+    imageURL: "/photos/testimonials/ll.png",
+    name: "乐乐  妈妈",
+    body: `一直以为，一位优秀且专业的网球教练，应该是既做得专业示范，又讲得了易懂的技术。很幸运遇到周教练，能做到上述两点。训练期间，周教练严格规范孩子的技术动作，同时让孩子简单快速的领悟动作要领。例如我的孩子在击球时胳膊伸展不到位，周教练就会想办法针对性的训练纠正她的错误动作。我的孩子是初学者，周教练就会针对初学者扣细节，耐心教授分解动作，讲授动作的要领和技巧，受力原理，循序渐进，孩子经过一段时间的训练，有很大的进步`,
+  },
+  {
+    imageURL: "/photos/testimonials/zgl.png",
+    name: "ZGL, Product Manager",
+    body: `A well-rounded and experienced tennis coach with solid skills. He is both professional and passionate. He helped me develop solid fundamentals while making the learning journey fun and enjoyable. Whether you are a recreational player who play tennis for fun or you are an intermediate player who wish to boot his/her tennis skills, I would strongly recommend CanDo Tennis.`,
+  },
+  {
+    imageURL: "/photos/testimonials/zizi.png",
+    name: "ZiZi Chen, Child Care Teacher",
+    body: `老师非常亲切， 对孩子们很有耐心。他特别注意基本功的训练， 如握拍的姿势，身体的角度，手臂的摆动等， 都必须严谨到位。课堂安排紧凑又不失趣味, 课后还会发给家长课后总结及小视频。希望有一天新加坡的网球冠军出自CanDo Tennis 康多网球的门下`,
+  },
+  {
+    imageURL: "/photos/testimonials/lx.png",
+    name: "Sally",
+    body: `​教学严谨， 认真负责， 认真对待每个学员。 态度温和,平易近人,技术精湛,强烈推荐康多网球 (CanDo Tennis)`,
+  },
+  {
+    imageURL: "/photos/testimonials/summer.png",
+    name: "Summer 妈妈",
+    body: `Summer跟益明教练学习打网球有二、三个月了, 每次上课前益明教练都非常注重课前的热身运动, 在上课时教练的耐心指导以及不厌其烦的做各种示范动作, 教孩子怎么能更快更好的掌握网球的基本动作要领，跟孩子分析动作错在哪里，怎么做才能更好的把动作做好, 利用好身体的自身运动, 集中力量快、准、狠把网球打出去, 同时保护好自己不受伤, 这点非常重要, Summer通过这段时间学习网球, 身体的体质及协调性也增加了, Summer接下来进入中四学习也更紧张了, 希望Summer学习运动两不误, 继续努力把网球学好, 加油加油加油`,
+  },
+  {
+    imageURL: "/photos/testimonials/an.png",
+    name: "An",
+    body: `俩个小孩跟着教练已经学习了一年多了，孩子们很喜欢网球也喜欢上益民教练的课。老师寓教于乐，课堂生动有趣，小孩的进步也是显而易见的。多谢教练的悉心指导，希望孩子们继续进步。`,
+  },
+  {
+    imageURL: "/photos/testimonials/lynnhl.png",
+    name: "Lynn",
+    body: `首先，很幸运遇到了伯乐周老师，孩子刚开始学网球的时候，只是出于同学的邀请，连我这个妈妈都觉得他也许就几天的热度。可周老师有神奇的方法、丰富的经验、认真的教导、亲切的关怀…孩子从我催着他上网球课，到每周上两次课 四个小时都不解渴，一有空就磨着老师加课；网球已经成为他热爱的、不可缺少的东西！然后，在收获健康的体魄、愉悦的心情的同时，你会发现，他完全变了一个人：阳光 自信，开朗乐观，在学校交到许多好朋友，在家里体谅帮助我…
+还有许多惊喜，快加入周老师的团队吧，每次课都有收获！`,
   },
 ];
 
