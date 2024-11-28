@@ -2,7 +2,7 @@ import Reviews from "@/components/Testimonials";
 import Classes from "@/components/Classes";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
-import Guide from "@/components/About";
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <Hero />
       <Gallery />
-      <Reviews />
-      <Guide />
+      <About />
       <Classes />
+      <Reviews />
       <Contact />
     </>
   );

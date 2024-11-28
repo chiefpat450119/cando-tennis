@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const Guide = () => {
+const About = () => {
   return (
-    <section className="flexCenter flex-col" id="about">
-      <div className="padding-container max-container w-full pb-24">
+    <section className="flexCenter flex-col bg-green-900" id="about">
+      <div className="padding-container max-container w-full mt-8 lg:mt-16 mb-12 lg:mb-24">
         <Image
           src="/tennis_ball.svg"
           alt="tennis ball"
@@ -16,8 +16,8 @@ const Guide = () => {
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">About Us</h2>
-          <p className="regular-16 text-gray-30 xl:max-w-[520px]">
-            As an ITF (International Tennis Federation) Certified Coach, I ahve
+          <p className="regular-16 text-green-50 xl:max-w-[520px]">
+            As an ITF (International Tennis Federation) Certified Coach, I have
             been training junior and adult tennis players to greatness since
             2019. Whether you're completely new to tennis or want to develop
             certain parts of your game, we'll work together to provide a fun and
@@ -69,4 +69,4 @@ const Guide = () => {
   );
 };
 
-export default Guide;
+export default About;
