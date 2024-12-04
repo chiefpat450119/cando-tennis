@@ -229,24 +229,20 @@ export const SOCIALS = {
   title: "Social",
   socials: [
     {
+      icon: "/xhs.svg",
+      link: "https://www.xiaohongshu.com/user/profile/62a60edb000000002102a569?xhsshare=CopyLink&appuid=62a60edb000000002102a569&apptime=1686908975"
+    },
+    {
       icon: "/facebook.svg",
-      link: "https://www.facebook.com",
+      link: "https://www.facebook.com/cando.tennis",
     },
     {
       icon: "/instagram.svg",
-      link: "https://www.instagram.com",
-    },
-    {
-      icon: "/twitter.svg",
-      link: "https://www.twitter.com",
+      link: "https://www.instagram.com/candotennis",
     },
     {
       icon: "/youtube.svg",
-      link: "https://www.youtube.com",
-    },
-    {
-      icon: "/wordpress.svg",
-      link: "https://www.wordpress.com",
+      link: "https://www.youtube.com/@candotennis",
     },
   ],
 };
