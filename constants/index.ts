@@ -146,26 +146,26 @@ export const TENNIS_CLASSES: TennisClassInfo[] = [
     price: "$100",
     description:
       "The goal of this class is to introduce tennis to players who have never touched a tennis racket before. After a few classes, students should be able to rally with each other and have fun on the court. Do you have what it takes? Sign up now to find out!",
-    imageURL: "/tennis_ball.svg",
+    imageURL: "/photos/IMG_2118_edited.jpg",
   },
   {
     title: "Semi-Private Beginner Class (2-3 persons)",
     price: "$110",
     description: "",
-    imageURL: "/tennis_ball.svg",
+    imageURL: "/photos/3 ladies_edited.jpg",
   },
   {
     title: "Private Intermediate Lesson",
     price: "$110",
     description:
       "This class is developed for intermediate players who want to improve on certain skills to make him/herself all around to be more confident during the match play. As the saying goes, practice makes perfect. So start training with someone that'll keep you motivated to practice for the long haul. Book a class today!",
-    imageURL: "/tennis_ball.svg",
+    imageURL: "/photos/forehand sm_edited.jpg",
   },
   {
     title: "Semi-Private Intermediate Class (2-3 persons)",
     price: "$120",
     description: "",
-    imageURL: "/tennis_ball.svg",
+    imageURL: "/photos/IMG_2077_edited.jpg",
   },
   {
     title: "Serving Class",
@@ -184,14 +184,14 @@ export const TENNIS_CLASSES: TennisClassInfo[] = [
 4 per group, 60$/pax
 
 `,
-    imageURL: "/tennis_ball.svg",
+    imageURL: "/photos/Serve with Tom_edited.jpg",
   },
   {
     title: "Family Class",
     price: "$120",
     description:
       "nothing beats the JOY of Family tennis fun/competition. Learn as a family, support each other not only in the house, but on the court...",
-    imageURL: "/tennis_ball.svg",
+    imageURL: "/photos/kids play.jpg",
   },
 ];
 

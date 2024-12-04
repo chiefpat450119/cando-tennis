@@ -63,8 +63,8 @@ const TennisClass = ({
 }: TennisClassInfo) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
-      <div className="flex items-center rounded-xl p-4 lg:p-7">
-        <Image src={imageURL} alt={title} width={50} height={50} />
+      <div className="flex items-center py-4 lg:py-7">
+        <Image src={imageURL} alt={title} width={300} height={300} className="rounded-3xl" />
       </div>
       <h2 className="bold-20 lg:bold-32 mt-3 capitalize">{title}</h2>
       <p className="bold-18 lg:text-[24px] mt-3 text-green-50">{price}</p>

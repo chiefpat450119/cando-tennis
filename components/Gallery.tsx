@@ -6,7 +6,8 @@ import ImageGallery from "react-image-gallery";
 const Gallery = () => {
   return (
     <section className="max-container padding-container my-6 flex flex-col">
-      <div className="max-container py-12 grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
+      <div className="max-container py-12 grid-cols-1 md:grid-cols-3 gap-5 w-full
+      hidden lg:grid">
         {GALLERY_IMAGES.map((image, index) => (
           <div key={index} className="relative">
             <img
