@@ -218,7 +218,7 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "WhatsApp", value: "+65 87966546" },
+    { label: "WhatsApp", value: "+65 88851795" },
     { label: "Email", value: "candotennissg@gmail.com" },
   ],
 };
